@@ -1,0 +1,246 @@
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.apply-btn {
+		float: right;
+		font-size: 13px;
+		padding: 20px 25px;
+	}
+	.course-start-text h2 {
+		font-size: 25px;
+	}
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.studyplus-contact-box {
+		font-size: 12px;
+		margin-left: 12px;
+		padding-left: 30px;
+	}
+	.studyplus-contact-box i.fa {
+		line-height: 27px;
+	}
+	.video-text,
+	.counter-item,
+	.event-box,
+	.single-lecturer-item,
+	.blog-item-box,
+	.tastimonial-wrapper,
+	.footer-widget {
+		margin-bottom: 30px;
+	}
+	.tastimonial-wrapper {
+		margin-bottom: 50px;
+	}
+	.lecturera-area,
+	.blog-area,
+	.footer-area,
+	.counter-area,
+	.why-choose-area {
+		padding-bottom: 70px;
+	}
+	.panel-group {
+		margin-bottom: 0;
+	}
+	.mainmenu ul li a {
+		font-size: 11px;
+		padding: 15px 11px;
+	}
+	.apply-btn {
+		font-size: 12px;
+		padding: 15px 12px;
+	}
+	.why-choose-content {
+		margin-bottom: 105px;
+	}
+	.sign-up-form {
+		margin-top: 30px;
+	}
+	.mainmenu ul li:hover ul {
+		top: 56px;
+	}
+	.footer-widget.intagram-wedget li {
+		width: 24%;
+	}
+	.contact-form {
+		margin-bottom: 50px;
+	}
+	.progress {
+		margin-bottom: 10px;
+	}
+	.progress-single-item h5 {
+		margin-top: 0;
+	}
+	.progress-single-item {
+		margin-bottom: 20px;
+	}
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+	.responsive-menu {
+		display: block;
+	}
+	.header-top-nav,
+	.social-link,
+	.logo {
+		text-align: center;
+	}
+	.studyplus-contact-box {
+		display: block;
+		margin-bottom: 15px;
+		text-align: left;
+	}
+	.logo {
+		margin-bottom: 15px;
+	}
+	div.slicknav_menu {
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+		text-align: center
+	}
+	a.slicknav_btn {
+		display: inline-block;
+		float: none;
+	}
+	.mainmenu-area {
+		display: none;
+	}
+	.event-box,
+	.single-lecturer-item,
+	.counter-item,
+	.blog-item-box,
+	.blog-item-box,
+	.single-logo-item {
+		margin-bottom: 30px;
+	}
+	.single-lecturer-img img {
+		width: 100%;
+	}
+	.blog-img img {
+		width: 100%;
+	}
+	.tastimonial-wrapper {
+		margin-bottom: 50px;
+	}
+	.lecturera-area,
+	.blog-area,
+	.footer-area,
+	.counter-area {
+		padding-bottom: 70px;
+	}
+	.footer-widget.contact-wedget {
+		margin: 36px 0;
+	}
+	.why-choose-content {
+		margin-bottom: 30px;
+		padding-left: 0;
+	}
+	.why-choose-content img {
+		position: static;
+	}
+	.tab-item-list li {
+		display: block
+	}
+	.slider-item {
+		height: auto;
+	}
+	.home-slider-area-2 .slider-text {
+		margin-bottom: 45px;
+		padding-top: 15px;
+	}
+	.search-widget {
+		margin-bottom: 20px;
+	}
+	.course-bg img {
+		width: 100%;
+	}
+	.course-tab-list-tem li {
+		display: block;
+		text-align: center;
+	}
+	.contact-number {
+		margin-bottom: 30px;
+	}
+	.teacher-skill {
+		margin-top: 30px;
+	}
+	.contact-form {
+		margin-bottom: 50px;
+	}
+	.progress {
+		margin-bottom: 10px;
+	}
+	.progress-single-item h5 {
+		margin-top: 0;
+	}
+	.progress-single-item {
+		margin-bottom: 20px;
+	}
+	.studyplus-contact-box {
+		display: none;
+	}
+	.responsive-menu i.fa-angle-down {
+		display: none;
+	}
+	.slicknav_nav a {
+		text-transform: uppercase;
+	}
+	.slider-item .search-box {
+		margin-bottom: 50px;
+	}
+	.home-slider-area-2 .owl-nav {
+		bottom: -13px;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+	.home-slider-area-2 .owl-nav div {
+		background: #1E90FF none repeat scroll 0 0;
+		color: #fff;
+		display: inline-block;
+		left: 0;
+		margin: 17px;
+		position: relative;
+		top: auto;
+	}
+	.slider-text h1 {
+		font-size: 20px;
+		line-height: 28px;
+		margin: 15px 0;
+	}
+	.slider-text {
+		padding: 20px 0;
+	}
+	.home-slider-area .owl-dot {
+		background: #343434 none repeat scroll 0 0;
+	}
+	.home-slider-area .owl-dots {
+		bottom: -35px;
+	}
+	.footer-bottom p {
+		text-align: center;
+	}
+	.scroll-top {
+		margin: 10px 0;
+	}
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container,
+	.container-fluid {
+		width: 450px;
+		margin: 0 auto;
+	}
+}
+
