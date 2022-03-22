@@ -166,331 +166,383 @@
     </style>
 </head>
 <body>
-    <!-- Mainmenu Area Start -->
-    <uc1:header runat="server" ID="header" />
-    <!-- Mainmenu Area End -->
-    <!-- Breadcrumb Area Start -->
-    <div class="breadcrumb-area breadcrumb-bg overlay-black pd-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 id="MainMenu" runat="server">Mandatory Disclosure</h2>
-                    <ul>
-                        <li><a href="index.aspx">Home</a></li>
-                        <span class="saparator"><i class="fa fa-long-arrow-right"></i></span>
-                        <li id="MainMenu1" runat="server">Mandatory Disclosure</li>
-                    </ul>
+    <form id="frm" runat="server">
+        <!-- Mainmenu Area Start -->
+        <uc1:header runat="server" ID="header" />
+        <!-- Mainmenu Area End -->
+        <!-- Breadcrumb Area Start -->
+        <div class="breadcrumb-area breadcrumb-bg overlay-black pd-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 id="MainMenu" runat="server">Mandatory Disclosure</h2>
+                        <ul>
+                            <li><a href="index.aspx">Home</a></li>
+                            <span class="saparator"><i class="fa fa-long-arrow-right"></i></span>
+                            <li id="MainMenu1" runat="server">Mandatory Disclosure</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Breadcrumb Area End -->
-    <!-- About School Area Start -->
+        <!-- Breadcrumb Area End -->
+        <!-- About School Area Start -->
 
-    <div class="blog-area pd-top-100 pd-bottom-70">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="section-title">A : GENERAL INFORMATION:</h2>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>SL NO.</th>
-                            <th>INFORMATION</th>
-                            <th>DETAILS</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>NAME OF SCHOOL</td>
-                            <td>SEVEN STARS ACADEMY</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>AFFILIATION NO. (IF APPLICABLE)</td>
-                            <td>3430625</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>SCHOOL CODE (IF APPLICABLE)</td>
-                            <td>66756</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>COMPLETE ADDRESS WITH PIN CODE</td>
-                            <td>MANDAP TOLI, HEHAL, NEAR ITJ, RANCHI JHARKHAND 834001</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>PRINCIPAL NAME & QUALIFICATION</td>
-                            <td>DR. BABBAN KUMAR, MBA, PHD.</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>SCHOOL EMAIL ID</td>
-                            <td><a href="mailto:sevenstarsacademy0011@gmail.com">sevenstarsacademy0011@gmail.com</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>CONTACT DETAILS (LANDLINE/MOBILE)</td>
-                            <td>7761844344</td>
-                        </tr>
-                    </table>
+        <div class="blog-area pd-top-100 pd-bottom-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="section-title">A : GENERAL INFORMATION:</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th>SL NO.</th>
+                                <th>INFORMATION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>NAME OF SCHOOL</td>
+                                <td>
+                                    <asp:Label ID="txtNameOfSchool" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>AFFILIATION NO. (IF APPLICABLE)</td>
+                                <td>
+                                    <asp:Label ID="txtAFFILIATION" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>SCHOOL CODE (IF APPLICABLE)</td>
+                                <td>
+                                    <asp:Label ID="txtSchoolCode" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>COMPLETE ADDRESS WITH PIN CODE</td>
+                                <td>
+                                    <asp:Label ID="txtAddress" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>PRINCIPAL NAME & QUALIFICATION</td>
+                                <td>
+                                    <asp:Label ID="txtPRINCIPAL" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>SCHOOL EMAIL ID</td>
+                                <td><a href="#">
+                                    <asp:Label ID="txtSchoolEmail" runat="server"></asp:Label></a></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>CONTACT DETAILS (LANDLINE/MOBILE)</td>
+                                <td>
+                                    <asp:Label ID="txtContact" runat="server"></asp:Label></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-12">
-                    <h2 class="section-title">B : DOCUMENTS AND INFORMATION </h2>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>SL NO.</th>
-                            <th>DOCUMENTS/INFORMATION</th>
-                            <th>DOWNLOAD DOCUMENT</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT. /UT</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>COPY OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2019, AND IT’S RENEWAL</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>COPY OF VALID FIRE SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>COPY OF THE DEO SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY </td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATIONOR SELF CERTIFICATE BY SCHOOL</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                    </table>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-12">
+                        <h2 class="section-title">B : DOCUMENTS AND INFORMATION </h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th>SL NO.</th>
+                                <th>DOCUMENTS/INFORMATION</th>
+                                <th>DOWNLOAD DOCUMENT</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION</td>
+                                <td>
+                                    <asp:HyperLink ID="File1" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE</td>
+                                <td>
+                                    <asp:HyperLink ID="File2" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT. /UT</td>
+                                <td>
+                                    <asp:HyperLink ID="File3" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>COPY OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2019, AND IT’S RENEWAL</td>
+                                <td>
+                                    <asp:HyperLink ID="File4" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>COPY OF VALID FIRE SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td>
+                                <td>
+                                    <asp:HyperLink ID="File5" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>COPY OF THE DEO SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY </td>
+                                <td>
+                                    <asp:HyperLink ID="File6" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATIONOR SELF CERTIFICATE BY SCHOOL</td>
+                                <td>
+                                    <asp:HyperLink ID="File7" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
+                                <td>
+                                    <asp:HyperLink ID="File8" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-12">
-                    <h2 class="section-title">C : RESULT AND ACADMICS</h2>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>SL NO.</th>
-                            <th>DOCUMENTS/INFORMATION</th>
-                            <th>DOWNLOAD DOCUMENT</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>FEE STRUCTURE OF THE SCHOOL</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>ANNUAL ACADEMIC CALANDER,</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>LAST THREE-YEAR RESULT OF THE BORAD EXAMINATION AS PER APPLICABLILITY</td>
-                            <td><a href="assets/documents.pdf" target="_blank">Download</a></td>
-                        </tr>
-                    </table>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-12">
+                        <h2 class="section-title">C : RESULT AND ACADMICS</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th>SL NO.</th>
+                                <th>DOCUMENTS/INFORMATION</th>
+                                <th>DOWNLOAD DOCUMENT</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>FEE STRUCTURE OF THE SCHOOL</td>
+                                <td>
+                                    <asp:HyperLink ID="File9" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>ANNUAL ACADEMIC CALANDER,</td>
+                                <td>
+                                    <asp:HyperLink ID="File10" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td>
+                                <td>
+                                    <asp:HyperLink ID="File11" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
+                                <td>
+                                    <asp:HyperLink ID="File12" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>LAST THREE-YEAR RESULT OF THE BORAD EXAMINATION AS PER APPLICABLILITY</td>
+                                <td>
+                                    <asp:HyperLink ID="File13" runat="server" Target="_blank">Download</asp:HyperLink>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-12">
-                    <h2 class="section-title">RESULT CLASS: X</h2>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>SL NO.</th>
-                            <th>YEAR</th>
-                            <th>NO. OF REGISTERED STUDENTS</th>
-                            <th>NO. OF STUDENTS PASSED</th>
-                            <th>PASS PERCENTAGE</th>
-                            <th>REMARKS</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-12">
+                        <h2 class="section-title">RESULT CLASS: X</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th>SL NO.</th>
+                                <th>YEAR</th>
+                                <th>NO. OF REGISTERED STUDENTS</th>
+                                <th>NO. OF STUDENTS PASSED</th>
+                                <th>PASS PERCENTAGE</th>
+                                <th>REMARKS</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-12">
-                    <h2 class="section-title">RESULT CLASS: X11</h2>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>SL NO.</th>
-                            <th>YEAR</th>
-                            <th>NO. OF REGISTERED STUDENTS</th>
-                            <th>NO. OF STUDENTS PASSED</th>
-                            <th>PASS PERCENTAGE</th>
-                            <th>REMARKS</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-12">
+                        <h2 class="section-title">RESULT CLASS: X11</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th>SL NO.</th>
+                                <th>YEAR</th>
+                                <th>NO. OF REGISTERED STUDENTS</th>
+                                <th>NO. OF STUDENTS PASSED</th>
+                                <th>PASS PERCENTAGE</th>
+                                <th>REMARKS</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-12">
-                    <h2 class="section-title">D : STAFF (TEACHING)</h2>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>SL NO.</th>
-                            <th>INFORMATION</th>
-                            <th>DETAILS</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>PRINCIPAL</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>TOTAL NO. OF TEACHERS</td>
-                            <td>43</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>o PGT</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>o TGT</td>
-                            <td>17</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>o PRT</td>
-                            <td>15</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>TEACHERS SECTION RATIO</td>
-                            <td>1.5</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>DETAILS OF SPECIAL EDUCATION</td>
-                            <td>01</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>DETAILS OF COUNSELLOR AND WELNESS TEACHERS</td>
-                            <td>01</td>
-                        </tr>
-                    </table>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-12">
+                        <h2 class="section-title">D : STAFF (TEACHING)</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th>SL NO.</th>
+                                <th>INFORMATION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>PRINCIPAL</td>
+                                <td>
+                                    <asp:Label ID="txtPRINCIPALNo" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>TOTAL NO. OF TEACHERS</td>
+                                <td>
+                                    <asp:Label ID="txtTotalTEACHERS" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>PGT</td>
+                                <td>
+                                    <asp:Label ID="txtPDT" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>TGT</td>
+                                <td>
+                                    <asp:Label ID="txtTGT" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>PRT</td>
+                                <td>
+                                    <asp:Label ID="txtPRT" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>TEACHERS SECTION RATIO</td>
+                                <td>
+                                    <asp:Label ID="txtTEACHERSSECTION" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>DETAILS OF SPECIAL EDUCATION</td>
+                                <td>
+                                    <asp:Label ID="txtSPECIALEDUCATION" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>DETAILS OF COUNSELLOR AND WELNESS TEACHERS</td>
+                                <td>
+                                    <asp:Label ID="txtWELNESSTEACHERS" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-12">
-                    <h2 class="section-title">SCHOOL INFRASTRURE:</h2>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>SL NO.</th>
-                            <th>INFORMATION</th>
-                            <th>DETAILS</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>TOTAL CMAPUS AREA OF THE SCHOOL (IN SQUARE MRT)</td>
-                            <td>8789.23(SQ. M)</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)</td>
-                            <td>43</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>NO. AND SIZE LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR)</td>
-                            <td>5-284.6456 (SQ.M)</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>INTERNET FACILITY (Y/N)</td>
-                            <td>YES</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>NO. OF GIRLS TOILETS</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>NO. OF BOYS TOILETS</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL</td>
-                            <td></td>
-                        </tr>
-                    </table>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-12">
+                        <h2 class="section-title">SCHOOL INFRASTRURE:</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th>SL NO.</th>
+                                <th>INFORMATION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>TOTAL CMAPUS AREA OF THE SCHOOL (IN SQUARE MRT)</td>
+                                <td>
+                                    <asp:Label ID="txtCMAPUSAREA" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)</td>
+                                <td><asp:Label ID="txtCLASSROOMS" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>NO. AND SIZE LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR)</td>
+                                <td><asp:Label ID="txtLABORATORIES" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>INTERNET FACILITY (Y/N)</td>
+                                <td><asp:Label ID="txtINTERNETFACILITY" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>NO. OF GIRLS TOILETS</td>
+                                <td><asp:Label ID="txtGIRLSTOILETS" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>NO. OF BOYS TOILETS</td>
+                                <td><asp:Label ID="txtBOYSTOILETS" runat="server"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL</td>
+                                <td><asp:Label ID="txtYOUTUBEVIDEO" runat="server"></asp:Label></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer Area Start -->
-    <uc1:footer runat="server" ID="footer" />
-    <!-- Footer Area End -->
+        <!-- Footer Area Start -->
+        <uc1:footer runat="server" ID="footer" />
+        <!-- Footer Area End -->
+    </form>
 </body>
 </html>
