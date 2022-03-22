@@ -41,6 +41,8 @@ public partial class page_content : System.Web.UI.Page
                 Response.Redirect("mandatory-disclosure.aspx");
             else if (Request.QueryString["cid"].ToString() == "33")
                 Response.Redirect("booklist.aspx");
+            else if (Request.QueryString["cid"].ToString() == "32")
+                Response.Redirect("syllabus.aspx");
             else
             {
                 StringBuilder sb = new StringBuilder();
